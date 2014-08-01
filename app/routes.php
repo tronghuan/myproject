@@ -19,5 +19,5 @@ Route::get('/', function()
 Route::get('about', function() {
 	return View::make('about');
 });
-
-Route::resource('users', 'UserController');
+Route::get('contact', 'PagesController@contact');
+Route::resource('users', 'UsersController');
